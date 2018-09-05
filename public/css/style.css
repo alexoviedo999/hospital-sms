@@ -7,10 +7,15 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
-  background: #148dcd;
+  background: url(../images/hospital-image.jpg);
   background-size: cover;
   color: #fff;
 }
+
+input[type=tel] {
+  display: none;
+}
+
 h1, h2, h3 {
   margin: 0;
   text-rendering: optimizeLegibility;
@@ -43,10 +48,9 @@ header .logo {
   display: block;
 }
 form {
-  width: 100%;
-  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 input {
   -webkit-appearance: none;
@@ -70,21 +74,30 @@ input[type=text] {
 input[type=button] {
   background: #e6e6e6;
   text-shadow: 0 1px 0 #f3f3f3;
+  width: 50%;
+  margin: auto;
 }
 input[type=button]:active {
   background: #bfbfbf;
-  position: relative;
   top: 2px;
   left: 1px;
 }
-#main {
-  max-width: 600px;
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.main {
+  max-width: 40%;
   margin: 1em auto 2em;
   padding: 1em 1.5em 1.5em;
   border-radius: 12px;
   background: rgba(0, 0, 0, 0.25);
   box-shadow: 3px 7px 10px rgba(0, 0, 0, 0.5);
+  height: max-content;
 }
+
 .intro {
   position: relative;
   padding: 0 0.75em;
