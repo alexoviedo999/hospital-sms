@@ -3,8 +3,6 @@
 This is a simple web app written in Node.js with Express.
 Additionally, I am using W3C Web Notifications API for the front-end UI to show the SMS receipt message with Socket.io.
 
-![screencast](public/images/nexmo-sms-notification-demo.gif)
-
 ## Running This Demo Locally on Your Machine
 
 ### 1. Install dependencies
